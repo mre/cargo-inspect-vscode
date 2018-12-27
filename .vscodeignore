@@ -1,0 +1,15 @@
+# standard
+.vscode/**
+typings/**
+out/test/**
+test/**
+src/**
+**/*.map
+**.ts
+**/.gitignore
+**/tsconfig.json
+vsc-extension-quickstart.md
+Makefile
+
+# test
+test-folder/**

@@ -1,0 +1,61 @@
+{
+    "name": "cargo-inspect",
+    "version": "0.1.0",
+    "publisher": "cargo-inspect-vscode",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mre/cargo-inspect-vscode.git"
+    },
+    "license": "MIT",
+    "displayName": "cargo-inspect",
+    "description": "Inspect and desugar Rust code to see what the compiler is doing behind the curtains",
+    "icon": "contrib/icon.png",
+    "galleryBanner": {
+        "color": "#6cfff9",
+        "theme": "light"
+    },
+    "categories": [
+        "Programming Languages",
+        "Other"
+    ],
+    "tags": [
+        "rust",
+        "inspect",
+        "desugar",
+        "hir",
+        "compiler"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [{
+            "title": "Run",
+            "command": "cargo-inspect.run",
+            "category": "cargo-inspect"
+        }],
+        "configuration": {
+            "title": "cargo-inspect Configuration",
+            "properties": {}
+        }
+    },
+    "activationEvents": [
+        "onCommand:cargo-inspect.run"
+    ],
+    "devDependencies": {
+        "typescript": "^2.9.2",
+        "vscode": "^1.1.21"
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "dependencies": {
+        "http-proxy-agent": "^2.1.0",
+        "event-stream": "3.3.4"
+    }
+}
