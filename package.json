@@ -30,11 +30,13 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [{
-            "title": "Run",
-            "command": "cargo-inspect.run",
-            "category": "cargo-inspect"
-        }],
+        "commands": [
+            {
+                "title": "Run",
+                "command": "cargo-inspect.run",
+                "category": "cargo-inspect"
+            }
+        ],
         "configuration": {
             "title": "cargo-inspect Configuration",
             "properties": {}
@@ -44,6 +46,7 @@
         "onCommand:cargo-inspect.run"
     ],
     "devDependencies": {
+        "@types/node": "^10.12.18",
         "typescript": "^2.9.2",
         "vscode": "^1.1.21"
     },
