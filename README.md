@@ -22,6 +22,8 @@ Marketplace](https://marketplace.visualstudio.com/items?itemName=cargo-inspect-v
 1. Hit <kbd>⌘ Command</kbd> + <kbd>⇧ Shift</kbd> + <kbd>p</kbd>
 2. Run `cargo-inspect: Run`.
 
+![Usage](./contrib/usage.gif)
+
 ## Contributing
 
 This plugin is far from feature-complete.  

@@ -12,7 +12,7 @@
     "license": "MIT",
     "displayName": "cargo-inspect",
     "description": "Inspect and desugar Rust code to see what the compiler is doing behind the curtains",
-    "icon": "contrib/icon.png",
+    "icon": "contrib/logo.png",
     "galleryBanner": {
         "color": "#6cfff9",
         "theme": "light"
